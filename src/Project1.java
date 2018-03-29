@@ -42,16 +42,13 @@ public class Project1 {
 
         // reading the rest of the txt file and put into both menlist[][] and womenlist[][]
         for (int i = 1; i <= human; i++) {
-            for (int j = 1; j <= human; j++) {
+            for (int j = 1; j <= human; j++)
                 menlist[i][j] = scan.nextInt();
-            }
         }
 
         for (int i = 1; i <= human; i++) {
-            for (int j = 1; j <= human; j++) {
+            for (int j = 1; j <= human; j++)
                 womenlist[i][j] = scan.nextInt();
-            }
-
         }
 
         // preprocessing womenlist[][] here
@@ -88,9 +85,9 @@ public class Project1 {
 
                 // we're checking the stability by men's ranking, from best to worst
                 // if the pairedMan (woman's current pair) is this same man, then he got his best possible choice
-                if (man == pairedMan) {
+                if (man == pairedMan)
                     break;
-                }
+
                 // else if proposing man has lower value (better rank), than it's not stable
                 // (processedWomenList[woman][man] will get us the ranking of this proposing man)
                 // (processedWomanList[woman][pairedMan] will get us her current man's ranking in her list)
