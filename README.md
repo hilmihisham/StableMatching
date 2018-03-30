@@ -11,6 +11,15 @@ Lines n + 1 to n + n will be the preferences of the n women where each line is a
 Line 2n + 1 will be a permutation of {1, 2, ..., n} which represents a matching. 
 In particular, the ith item in the permutation is the number of the woman with which man i is matched.
 
+## Running the code
+The code can simply be run with command `java Project1` and it will defaulting to use input1.txt. 
+
+If command-line argument was provided, then the code will look for the specified file as input file (i.e. command `java Project1 2` will force the code to use input2.txt as input file instead).
+
+The code will simply prints out error and exit if more than 1 command-line argument were given (i.e. `java Project1 3 2` will not work).
+
+If the specified input file is not found, then the program will just throw `FileNotFoundException`.
+
 ## Output
 Yes (if matching is stable) or No and an ordered pair representing an instability (if matching is instable).
 
