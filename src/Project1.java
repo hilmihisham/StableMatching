@@ -14,10 +14,26 @@ public class Project1 {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        // initializing input file and scanner
+        // declaring string to hold the path of the input file
+        String inputpath;
+
         // get the directory where the .class file is at : System.getProperty("java.class.path")
-        String inputpath = System.getProperty("java.class.path") + "\\input1.txt";
+        if (args.length == 0)
+            // if no args given, then just default to "input1.txt"
+            inputpath = System.getProperty("java.class.path") + "\\input1.txt";
+        else if (args.length == 1)
+            // use provided args to choose which input file to read
+            inputpath = System.getProperty("java.class.path") + "\\input" + args[0] + ".txt";
+        else {
+            // if more than 1 args were given
+            System.out.println("Error! Cannot have multiple input files.");
+            return;
+        }
+
+        // reading the command line arguments
         System.out.println("input1.txt path : " + inputpath);
+
+        // initializing input file and scanner
         File file = new File(inputpath);
         Scanner scan = new Scanner(file);
 
