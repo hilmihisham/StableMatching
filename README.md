@@ -30,7 +30,7 @@ I've also printed out the full path of input1.txt file along with number of men/
 Line 1 : 2     <- (Line 1: number of men (or women))
 Line 2 : 1 2   <- (Line 2 & 3: both men prefer woman 1)
 Line 3 : 1 2
-Line 4 : 2 1   <- (Line 4 & 5: both women prefer men 1)
+Line 4 : 2 1   <- (Line 4 & 5: both women prefer men 2)
 Line 5 : 2 1
 Line 6 : 1 2   <- (Line 6: matching M1-W1, M2-W2)
 ```
